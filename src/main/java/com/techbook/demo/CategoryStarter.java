@@ -12,7 +12,7 @@ public class CategoryStarter implements CommandLineRunner {
     private CategoryService categoryService;
     @Override
     public void run(String... args) throws Exception {
-        categoryService.saveCategory(new Category("Kitchen Furniture"));
-        categoryService.deleteCategory("675df4604e64b564c4951b50");
+       // categoryService.saveCategory(new Category("Kitchen Furniture"));
+        //categoryService.deleteCategory("675df4604e64b564c4951b50");
     }
 }

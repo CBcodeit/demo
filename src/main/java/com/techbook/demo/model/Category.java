@@ -10,20 +10,27 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 
 @Document(collection = "categories")
+@Data
 @AllArgsConstructor
+@Builder
 @NoArgsConstructor
-@Getter
-@Setter
 public class Category {
+
     @Id
     private String id;
     @Nonnull
     private String name;
+
     private String parentCategory;
+
     @CreatedDate
     private LocalDateTime createdAt;
+
     @LastModifiedDate
     private LocalDateTime modifiedAt;
+
+
+
 
     public Category(String name) {
         this.name = name;
